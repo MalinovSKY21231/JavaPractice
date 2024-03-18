@@ -59,8 +59,8 @@ public class Office {
         officeWorkers.shutdown();
         officeWorkers.awaitTermination(1, TimeUnit.DAYS);
 
-        System.out.printf("Общее количество молодых: %d, обслуженные: %d, не обслуженные: %d, %% обслуженных: %.2f%%, %% не обслуженных: %.2f%% \n", youngVisitors, youngVisitors - leftYoungVisitors, leftYoungVisitors, (double) (youngVisitors - leftYoungVisitors) / youngVisitors * 100,(double) 100-((youngVisitors - leftYoungVisitors) / youngVisitors * 100));
-        System.out.printf("Общее количество пожилых: %d, обслуженные: %d, не обслуженные: %d, %% обслуженных: %.2f%%, %% не обслуженных: %.2f%% \n", seniorVisitors, seniorVisitors - leftSeniorVisitors, leftSeniorVisitors, (double) (seniorVisitors - leftSeniorVisitors) / seniorVisitors * 100,(double) 100-((seniorVisitors - leftSeniorVisitors) / seniorVisitors * 100));
-        System.out.printf("Общее количество бизнесменов: %d, обслуженные: %d, не обслуженные: %d, %% обслуженных: %.2f%%, %% не обслуженных: %.2f%% \n", businessVisitors, businessVisitors - leftBusinessVisitors, leftBusinessVisitors, (double) (businessVisitors - leftBusinessVisitors) / businessVisitors * 100,(double) 100-((businessVisitors - leftBusinessVisitors) / businessVisitors * 100  ));
+        System.out.printf("Общее количество молодых: %d, обслуженные: %d, не обслуженные: %d, %% обслуженных: %.2f%%\n", youngVisitors, youngVisitors - leftYoungVisitors, leftYoungVisitors, (double) (youngVisitors - leftYoungVisitors) / youngVisitors * 100);
+        System.out.printf("Общее количество пожилых: %d, обслуженные: %d, не обслуженные: %d, %% обслуженных: %.2f%%\n", seniorVisitors, seniorVisitors - leftSeniorVisitors, leftSeniorVisitors, (double) (seniorVisitors - leftSeniorVisitors) / seniorVisitors * 100);
+        System.out.printf("Общее количество бизнесменов: %d, обслуженные: %d, не обслуженные: %d, %% обслуженных: %.2f%%\n", businessVisitors, businessVisitors - leftBusinessVisitors, leftBusinessVisitors, (double) (businessVisitors - leftBusinessVisitors) / businessVisitors * 100);
     }
 }
